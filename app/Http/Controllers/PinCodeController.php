@@ -71,6 +71,8 @@ class PinCodeController extends Controller
     public function store(Request $request)
     {
 
+        // just testing
+$call = "fdfd";
         $request->validate([
             'email' => 'required|email',
             'phone_number' => ['required', 'regex:/^\+1 \d{3}-\d{3}-\d{4}$/'],
